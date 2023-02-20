@@ -1,8 +1,7 @@
 /*p {*/
-/*    background-color: blue;*/
-/*    color: white;*/
-/*}*/
-/* When using ID selectors, no need to specify the tag name, because ID is unique */
+/* background-color: blue;*/
+/* color: white;}*/
+
 p#id-selector-1 {
     background-color: red;
     color: white;
@@ -11,32 +10,30 @@ p#id-selector-2 {
     background-color: yellow;
     color: black;
 }
-/* When using class selectors, the style can be applied to different types of element */
+
 .class-selector {
     background-color: yellow;
     color: blue;
 }
-/* Render selector-3 with red background color and white foreground color, and selector-3 follows below relationship*/
-.selector-1 .selector-3 { /* refers to .selector-3 as a descendant of .selector-1 */
+
+.selector-1 .selector-3 {
     background-color: red;
     color: white;
 }
-/* Render selector-4 which follows the below hierarchy*/
-.selector-2 > .selector-3 > .selector-4 { /* Refers to .selector-4 as a direct child of .selector-3 which is a direct
-child of .selector-2 */
+.selector-2 > .selector-3 > .selector-4 {
     background-color: yellow;
     color: blue;
 }
-/* Useful foreground colors in CSS format */
+
 .fg-color-black { color: black; }
 .fg-color-white { color: white; }
 .fg-color-blue { color: #7070ff; }
 .fg-color-red { color: #ff7070; }
 .fg-color-green { color: green; }
+
 .bg-color-yellow {
     background-color: #ffff07;
 }
-/* Useful background colors in CSS format */
 .bg-color-blue {
     background-color: #7070ff;
 }
@@ -46,9 +43,8 @@ child of .selector-2 */
 .bg-color-green {
     background-color: green;
 }
-/* border width, style, color */
+
 .border-fat {
-    /* top right bottom left, clockwise*/
     border-width: 20px 30px 20px 30px; }
 .border-thin {
     border-width: 4px; }
@@ -62,58 +58,67 @@ child of .selector-2 */
     border-color: #ff7070; }
 .border-blue {
     border-color: #7070ff; }
-/* padding top left bottom right */
+
 .padded-top-left {
     padding-top: 50px;
     padding-left: 50px;
 }
+
 .padded-bottom-right {
     padding-bottom: 50px;
     padding-right: 50px;
 }
+
 .padding-fat {
     padding: 50px;
 }
-/* margin top left bottom right */
+
 .margin-bottom {
     margin-bottom: 50px;
 }
+
 .margin-right-left {
     margin-left: 50px;
     margin-right: 50px;
 }
+
 .margin-all-around {
     margin: 30px;
 }
-/* border round corners */
+
 .rounded-corners-top {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
+
 .rounded-corners-bottom {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
 }
+
 .rounded-corners-all-around {
     border-radius: 50px;
 }
+
 .rounded-corners-inline {
     border-radius: 30px 0px 20px 50px;
 }
-/* element's dimensions width and height */
+
 .dimension-portrait {
     width: 75px;
     height: 100px;
 }
+
 .dimension-landscape {
     width: 100px;
     height: 75px;
 }
+
 .dimension-square {
     width: 75px;
     height: 75px;
 }
-/* style position, relative */
+
 .pos-relative-nudge-up-right {
     position: relative;
     bottom: 30px;
@@ -127,7 +132,8 @@ child of .selector-2 */
 .pos-relative {
     position: relative;
 }
-/* style position, absolute */
+
+
 .pos-absolute-10-10 {
     position: absolute;
     top: 10px;
@@ -142,17 +148,17 @@ child of .selector-2 */
     position: absolute;
     top: 20px;
     left: 120px;      }
-/* style position, fixed */
+
 .pos-fixed {
     position: fixed;
     right: 0px;
     bottom: 50%;
 }
-/* styling z-index, make elements render later, on top of others */
+
 .zindex-bring-to-front {
     z-index: 10;
 }
-/* floating content, laying out content horizontally */
+
 .float-left {
     float: left;
 }
@@ -165,6 +171,7 @@ child of .selector-2 */
 .float-done {
     clear: both;
 }
+
 .grid-row {
     clear: both;
 }
@@ -197,24 +204,27 @@ child of .selector-2 */
     width: 20%;
     float: left;
 }
+
 .rotate-paragraph {
     width: 250px;
     height: 250px;
     transform: rotate(90deg);
 }
+
 .rotate-list {
     transform: rotate(12deg);
     width: 100px;
     background-color: red;
     color: white;
 }
-.rotate-list-counter-clockwise {
-    transform: rotate(-10deg);
-    width: 300px;
-    background-color: plum;
-    color: bisque;
-    margin-bottom: 40px;
+
+.rotate-list-counter {
+    transform: rotate(-12deg);
+    width: 100px;
+    background-color: lightblue;
+    color: white;
 }
+
 .rotate-list-items li {
     width: 100px;
     text-align: right;
@@ -232,14 +242,15 @@ child of .selector-2 */
     transform: rotate(10deg);
     background-color: red;
 }
+
 .rotate-image {
     transform: rotate(-10deg);
 }
-.rotate-image-example {
-    transform: rotate(20deg);
-    margin-top: 40px;
-    margin-bottom: 40px;
+
+.rotate-another {
+    transform: rotate(10deg);
 }
+
 .rotate-table {
     position: relative;
     left: 50px;
@@ -258,26 +269,31 @@ child of .selector-2 */
     background-color: green;
     color: white;
 }
+
 .gradients-linear {
     background: linear-gradient(yellow, red);
     width: 200px;
     height: 200px;
 }
-.gradients-linear-example {
-    background: linear-gradient(lightpink, lightblue, blueviolet);
-    width: 200px;
+
+.gradients-linear-my {
+    background: linear-gradient(lightsalmon, mediumpurple);
+    width: 250px;
     height: 200px;
 }
+
 .gradients-radial {
     background: radial-gradient(yellow, green);
     width: 200px;
     height: 200px;
 }
-.gradients-radial-example {
-    background: radial-gradient(palevioletred, plum, bisque);
+
+.gradients-radial-my {
+    background: radial-gradient(cornflowerblue, palegoldenrod);
     width: 200px;
-    height: 200px;
+    height: 150px;
 }
+
 .gradients-positioned {
     background:
             radial-gradient(
@@ -286,121 +302,66 @@ child of .selector-2 */
     height: 200px;
     color: white;
 }
-.gradients-positioned-example {
+
+.gradients-positioned-my {
     background:
             radial-gradient(
-                    at left, lightseagreen, lightslategrey, navajowhite);
-    width: 200px;
-    height: 200px;
-    color: ivory;
+                    at top right, gold, plum);
+    width: 230px;
+    height: 220px;
+    color: darkblue;
 }
+
 .animation-keyframes {
     position: relative;
-    top: 0px;
-    animation-duration: 7s;
-    animation-name: slidein;
-    width: 200px;
-    height: 200px;
-    background-color: red;
+    top: 5px;
+    animation-duration: 5s;
+    animation-name: App-logo-spin;
+    width: 300px;
+    height: 150px;
+    background-color: pink;
     color: white;
 }
-@keyframes slidein {
+
+@keyframes App-logo-spin {
     from {
         position: relative;
         top: 0px;
-        font-size: 100%;
+        font-size: 10%;
         margin-left: 100%;
         width: 200px;
         height: 200px;
-        background-color: yellow;
-        color: black;
+        background-color: cornflowerblue;
+        color: brown;
     }
-    50% {
-        position: relative;
-        top: -200px;
-        font-size: 300%;
-        margin-left: 25%;
-        width: 400px;
-        height: 400px;
-        background-color: blue;
-        color: white;
-    }
-    to {
-        position: relative;
-        top: 0px;
-        font-size: 100%;
-        margin-left: 0%;
-        width: 200px;
-        height: 200px;
-        background-color: red;
-        color: white;
-    }
-}
-.animation-keyframes-example {
-    position: relative;
-    top: 12px;
-    animation-duration: 20s;
-    animation-name: zoom-in;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    margin-left: 20%;
-    width: 300px;
-    height: 200px;
-    background-color: indianred;
-    color: khaki;
-}
-@keyframes zoom-in {
-    from {
-        position: relative;
-        top: -200px;
-        font-size: 140%;
-        margin-left: 15%;
-        width: 300px;
-        height: 200px;
-        background-color: brown;
-        color: bisque;
-    }
+
     30% {
         position: relative;
         top: -100px;
-        font-size: 120%;
+        font-size: 200%;
         margin-left: 25%;
-        width: 300px;
-        height: 200px;
-        background-color: rebeccapurple;
-        color: cadetblue;
+        width: 500px;
+        height: 300px;
+        background-color: gray;
+        color: white;
     }
-    60% {
-        position: relative;
-        top: -50px;
-        font-size: 110%;
-        margin-left: 5%;
-        width: 300px;
-        height: 200px;
-        background-color: olivedrab;
-        color: lightpink;
-    }
+
     to {
         position: relative;
-        top: 12px;
-        font-size: 100%;
+        top: 0px;
+        font-size: 60%;
         margin-left: 20%;
-        width: 300px;
-        height: 200px;
-        background-color: indianred;
-        color: khaki;
+        width: 100px;
+        height: 300px;
+        background-color: rebeccapurple;
+        color: white;
     }
 }
+
 .flex-container {
     border-width: 5px;
     border-color: black;
     border-style: solid;
-}
-.flex-container-flex {
-    border-width: 5px;
-    border-color: black;
-    border-style: solid;
-    display: flex;
 }
 .flex-box {
     border: 5px gray solid;
@@ -418,35 +379,47 @@ child of .selector-2 */
     background-color: red;
     color: white;
 }
-.flex-container-center {
+
+.flex-container-h-default {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+
+.flex-container-h-center {
     border-width: 5px;
     border-color: black;
     border-style: solid;
     display: flex;
     justify-content: center;
 }
-.flex-container-end {
+
+.flex-container-h-end {
     border-width: 5px;
     border-color: black;
     border-style: solid;
     display: flex;
     justify-content: end;
 }
-.flex-container-space-around {
+
+.flex-container-h-around {
     border-width: 5px;
     border-color: black;
     border-style: solid;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
-.flex-container-space-between {
+
+.flex-container-h-between {
     border-width: 5px;
     border-color: black;
     border-style: solid;
     display: flex;
     justify-content: space-between;
 }
-.flex-container-align-start {
+
+.flex-container-v {
     border-width: 5px;
     border-color: black;
     border-style: solid;
@@ -454,7 +427,8 @@ child of .selector-2 */
     justify-content: space-evenly;
     align-items: flex-start;
 }
-.flex-container-align-center {
+
+.flex-container-v-center {
     border-width: 5px;
     border-color: black;
     border-style: solid;
@@ -462,23 +436,20 @@ child of .selector-2 */
     justify-content: space-evenly;
     align-items: center;
 }
-.flex-container-align-end {
+
+.flex-container-v-h {
     border-width: 5px;
     border-color: black;
     border-style: solid;
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    /*justify-content: space-evenly;*/
+    /*align-items: center;*/
 }
-.flex-container-even {
-    border-width: 5px;
-    border-color: black;
-    border-style: solid;
-    display: flex;
-}
-.flex-container-even .flex-box {
+
+.flex-container-v-h > .flex-box {
     flex-basis: 100%;
 }
+
 @media (min-width: 0px)
 and (max-width: 600px) {
     body {
@@ -488,90 +459,39 @@ and (max-width: 600px) {
         background-color: red;
         color: white;
     }
-    .media-query-div {
-        border: 4px brown solid;
+}
+
+/*my example*/
+@media (min-width: 0px)
+and (max-width: 800px) {
+    body {
+        background-color: lightsteelblue;
+        color: green;
     }
-    .media-query-div h4 {
-        font-size: 24px;
-        background-color: darkslateblue;
-        color: floralwhite;
-    }
-    .media-query-div p {
-        font-size: 20px;
-        background-color: plum;
-        color: darkblue;
+    .media-query-1 {
+        background-color: black;
+        color: beige;
     }
 }
-@media (min-width: 600px)
-and (max-width: 1200px) {
+@media (min-width: 800px)
+and (max-width: 1500px) {
     body {
-        background-color: blue;
-        color: white;
-    }
-    .media-query {
-        background-color: yellow;
+        background-color: plum;
         color: black;
     }
-    .media-query-div {
-        border: 10px firebrick solid;
-        padding: 16px;
-    }
-    .media-query-div h4 {
-        font-size: 18px;
-        background-color: mistyrose;
-        color: midnightblue;
-    }
-    .media-query-div p {
-        font-size: 16px;
-        background-color: palevioletred;
-        color: ivory;
+    .media-query-2 {
+        background-color: darkgreen;
+        color: papayawhip;
     }
 }
-@media (min-width: 1200px)
-and (max-width: 1800px) {
+@media (min-width: 1500px)
+and (max-width: 2000px) {
     body {
-        background-color: red;
-        color: white;
+        background-color: lightpink;
+        color: darkgreen;
     }
-    .media-query {
-        background-color: blue;
-        color: white;
-    }
-    .media-query-div {
-        border: 12px lightpink solid;
-        border-radius: 10px;
-    }
-    .media-query-div h4 {
-        font-size: 20px;
-        background-color: honeydew;
-        color: rebeccapurple;
-    }
-    .media-query-div p {
-        font-size: 18px;
-        background-color: lemonchiffon;
-        color: royalblue;
+    .media-query-3 {
+        background-color: darkslategrey;
+        color: lightcyan;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
