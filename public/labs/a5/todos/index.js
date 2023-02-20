@@ -1,5 +1,3 @@
-
-
 /* eslint-env jquery */
 import TodoList from "./TodoList.js";
 
@@ -11,3 +9,4 @@ $('#wd-todo').append(`
         ${TodoList()}
     </div>
 `);
+
