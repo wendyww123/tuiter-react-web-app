@@ -1,0 +1,12 @@
+.wd-nav-icon {
+    display: inline-block;
+    width: 30px;
+    height: 24px;
+}
+
+@media (max-width: 1200px) {
+    .wd-nav-icon {
+        text-align: center;
+        width: 100%;
+    }
+}
