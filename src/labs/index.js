@@ -2,7 +2,7 @@ import Nav from "../nav";
 import Assignment6 from "./a6";
 import Assignment7 from "./a7";
 import {Routes, Route} from "react-router";
-
+import React from 'react'
 function Labs() {
     return (
         <div>

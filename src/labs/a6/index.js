@@ -1,8 +1,8 @@
-import Classes from "./classes";
+import Classes from "./class";
 import Styles from "./styles";
 import ConditionalOutput from "./conditional-output";
 import TodoList from "./todo/todo-list";
-
+import React from 'react'
 
 function Assignment6() {
     return (
