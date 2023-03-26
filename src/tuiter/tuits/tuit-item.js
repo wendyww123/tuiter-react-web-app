@@ -10,7 +10,7 @@ const TuitItem = ({tuitItem}) => {
     }
     return (
         <li className="list-group-item d-flex flex-row w-100">
-            <img className="me-3 avatar-img mt-1" src={`/images/${tuitItem.image}`}/>
+            <img className="me-3 avatar-img mt-1" src={`/images/${tuitItem.image}`} alt="#"/>
             <div className="flex-column flex-fill">
                 <i className="bi bi-x-lg float-end"
                    onClick={() => deleteTuitHandler(tuitItem._id)}/>
