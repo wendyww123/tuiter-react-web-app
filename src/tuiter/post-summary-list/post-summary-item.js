@@ -10,7 +10,7 @@ const PostSummaryItem = ({post}
                     <div>{post.title ? post.title : post.tuit}</div>
                 </div>
                 <div className="col-2">
-                    <img width={70} className="float-end rounded-3" src={`/images/${post.image}`} alt="#"/>
+                    <img width={70} className="float-end rounded-3" src={`/images/${post.image}`}/>
                 </div>
             </div>
         </li>

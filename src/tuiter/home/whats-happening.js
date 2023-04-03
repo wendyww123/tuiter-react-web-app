@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {createTuit} from "../tuits/tuits-reducer";
+import {createTuitThunk} from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
@@ -7,15 +7,19 @@ const WhatsHappening = () => {
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
         const newTuit = {
-            tuit: whatsHappening
+            tuit: whatsHappening,
+            handle: "@nasa",
+            userName: "NASA",
+            image: "nasa.png",
+            time: "1h",
         }
-        dispatch(createTuit(newTuit));
+        dispatch(createTuitThunk(newTuit));
     }
 
     return (
         <div className="row">
             <div className="col-auto">
-                <img src="/images/nasa.png" width={60} alt="#"/>
+                <img src="/images/nasa.png" width={60}/>
             </div>
             <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"
